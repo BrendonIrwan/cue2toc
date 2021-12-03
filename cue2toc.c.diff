@@ -1,0 +1,6 @@
+795,796c795,796
+< 	while (tr->indexes[j] != -1 && i < NUM_OF_INDEXES) {
+< 		if (fr2tc(timecode_buffer, tr->indexes[j++]) == -1)
+---
+> 	while (tr->indexes[j] != -1 && j < NUM_OF_INDEXES) {
+> 		if (fr2tc(timecode_buffer, tr->indexes[j++] - start) == -1)
